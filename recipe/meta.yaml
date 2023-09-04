@@ -1,5 +1,5 @@
 {% set name = "zen-engine" %}
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/zen_engine-{{ version }}.tar.gz
-  sha256: e6f550930453b7085025645699a1ec34229aeea10c5f0875618881e285b1d64f
+  sha256: 1a254877b01258cd4e7c48bffc04ebfb635e24729dbbde80ca9cbe3e111ff1df
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -21,7 +21,7 @@ requirements:
     - maturin >=0.14,<0.15                # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('rust') }}
-  host:      
+  host:
     - python
     - maturin >=0.14,<0.15
     - pip
