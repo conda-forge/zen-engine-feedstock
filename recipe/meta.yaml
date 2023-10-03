@@ -1,5 +1,5 @@
 {% set name = "zen-engine" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/zen_engine-{{ version }}.tar.gz
-  sha256: 01ae8666982ce210d9ef4b677860749bb815c08abe1dd14bfb76c88e5f23b211
+  sha256: 540256463193333e9e05316d515f091fbacedd8cf89cbd448c897f7d77ce0bc3
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
