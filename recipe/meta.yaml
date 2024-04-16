@@ -26,7 +26,6 @@ requirements:
     - maturin >=0.14,<0.15
     - pip
     - rust
-    - patch  # [win]
   run:
     - python
     - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
