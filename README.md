@@ -282,5 +282,7 @@ Feedstock Maintainers
 =====================
 
 * [@carinapeng](https://github.com/carinapeng/)
+* [@ivergara](https://github.com/ivergara/)
 * [@janjagusch](https://github.com/janjagusch/)
+* [@nick-harmening](https://github.com/nick-harmening/)
 
