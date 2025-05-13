@@ -22,6 +22,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('rust') }}
+    missing_dso_whitelist:                     # [win]
+        - "*/api-ms-win-core-winrt-*.dll"      # [win]
   host:
     - python
     - maturin >=0.14,<0.15
