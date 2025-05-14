@@ -1,5 +1,5 @@
 {% set name = "zen-engine" %}
-{% set version = "0.43.0" %}
+{% set version = "0.44.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/zen_engine-{{ version }}.tar.gz
-  sha256: 09c3755aa3d6cffed31eff3e65c9c00b4fce1b14ee33b48298ce33206adad78e
+  sha256: 9e7ba991b577d19d1b319f496c23e86c8f819713155fc49fe23f8ba0ddf263aa
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  missing_dso_whitelist:                   # [win]
+  missing_dso_whitelist:   # [win]
     - "*/api-ms-win-core-winrt-*.dll"      # [win]
 
 requirements:
