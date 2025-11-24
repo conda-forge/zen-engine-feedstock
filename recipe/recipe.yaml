@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: zen-engine
-  version: "0.50.2"
+  version: "0.50.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/zen_engine-${{ version }}.tar.gz
-  sha256: d70318b03af08f2212dee4c5e4d675a2b54a447e69cb4f66bb08bd0017974526
+  sha256: 54e20a2393446edb5aea9522b33567cc7bcc6b4eb1d898e7b6cc3470f8e76840
 
 build:
   number: 0
