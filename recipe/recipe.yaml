@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: zen-engine
-  version: "2.0.2"
+  version: "2.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/zen_engine-${{ version }}.tar.gz
-  sha256: e300812dee2839f068a634b04c5ef1809dac5177b235b65a0e592db9fc3b350f
+  sha256: 8d204b4fa8ca4b6d4f060a198ea0f01f91da8cbd2aeccdb418b1e41205c329e3
 
 build:
-  number: 1
+  number: 0
   skip: python == "3.14.* *_cp314t" and target_platform == "linux-aarch64"
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
